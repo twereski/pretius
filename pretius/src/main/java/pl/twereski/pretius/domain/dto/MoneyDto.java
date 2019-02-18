@@ -1,4 +1,4 @@
-package pl.twereski.pretius.domain;
+package pl.twereski.pretius.domain.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -10,7 +10,7 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 @Data
 @AllArgsConstructor
-public class Money implements Serializable {
+public class MoneyDto implements Serializable {
 
     String code;
     BigDecimal amount;

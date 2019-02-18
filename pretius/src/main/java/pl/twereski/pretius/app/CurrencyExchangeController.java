@@ -4,8 +4,8 @@ import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import pl.twereski.pretius.app.nbp.NbpFacade;
 import pl.twereski.pretius.domain.Converter;
-import pl.twereski.pretius.domain.ExchangeDto;
-import pl.twereski.pretius.domain.Money;
+import pl.twereski.pretius.domain.dto.ExchangeDto;
+import pl.twereski.pretius.domain.dto.MoneyDto;
 
 
 @AllArgsConstructor
@@ -22,7 +22,7 @@ public class CurrencyExchangeController {
     }
 
     @PostMapping
-    Money exchange(@RequestBody ExchangeDto exchangeDto) {
+    MoneyDto exchange(@RequestBody ExchangeDto exchangeDto) {
         return converter.convert(exchangeDto);
     }
 }
