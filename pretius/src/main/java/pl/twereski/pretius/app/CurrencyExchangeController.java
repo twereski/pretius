@@ -16,7 +16,7 @@ public class CurrencyExchangeController {
     private final NbpFacade facade;
     private final Converter converter;
 
-    @GetMapping
+    @PostMapping("/update")
     void update() {
         facade.updateRates();
     }
