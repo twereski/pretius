@@ -1,15 +1,12 @@
 package pl.twereski.pretius.domain.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
 import java.math.BigDecimal;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Data
+@NoArgsConstructor
 public class ExchangeDto {
 
     private BigDecimal amount;

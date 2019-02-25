@@ -1,15 +1,12 @@
 package pl.twereski.pretius.app.nbp.dto;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.Value;
 
 import java.util.Collection;
 
-@AllArgsConstructor
-@NoArgsConstructor
 @Data
+@NoArgsConstructor
 public class NbpResponse {
 
     private String table;
